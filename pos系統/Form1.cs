@@ -53,7 +53,7 @@ namespace pos系統
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This is about");
+            MessageBox.Show("This is me ");
         }
     }
 }
