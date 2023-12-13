@@ -487,7 +487,7 @@ namespace pos系統
             // 2. create content
 
             // 2.1. add header
-            Paragraph header_1 = new Paragraph("北護 藥物倉儲系統 統計報表")
+            Paragraph header_1 = new Paragraph("北護 藥妝倉儲系統 統計報表")
                .SetTextAlignment(TextAlignment.CENTER)
                .SetFontSize(36)
                .SetFont(font);
@@ -651,7 +651,7 @@ namespace pos系統
                 canvas.BeginText()
                     .SetFontAndSize(font, 15)
                     .MoveText(pageSize.GetWidth() / 2 - 54, pageSize.GetHeight() - 20)
-                    .ShowText("北護藥局倉儲系統")
+                    .ShowText("北護藥妝倉儲系統")
                     .EndText();
 
                 //Draw footer line
@@ -680,7 +680,7 @@ namespace pos系統
 
 
                 //Draw watermark
-                Paragraph p = new Paragraph("極  機  密 \n Confidential").SetFont(font).SetFontSize(60);
+                Paragraph p = new Paragraph("最  高  機  密 \n Confidential").SetFont(font).SetFontSize(60);
                 canvas.SaveState();
                 PdfExtGState gs1 = new PdfExtGState().SetFillOpacity(0.2f);
                 canvas.SetExtGState(gs1);
